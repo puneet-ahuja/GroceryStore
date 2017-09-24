@@ -1,0 +1,102 @@
+/*To increase size of font on page*/
+body{
+	font-size: 24px;
+}
+
+#inputForm{
+	width: 80%;
+	margin:auto;
+}
+/*Assigning border to fieldset in input form*/
+#inputForm fieldset{
+	border-radius: 5px;
+	border : 2px solid #DC7633  ;
+}
+
+#lgdTitle{
+	font-size: 30px;
+}
+
+#inputForm label{
+	float: left;
+	width: 40%;
+	padding-left: 10%;
+}
+/*
+#inputForm input:focus{
+	border :  2px solid #DC7633 ;
+}
+*/
+
+#btnSubmit {
+	float: left;
+	margin: 0% 26% 0% 10%;
+}
+[type="submit"] , [type="reset"]{
+	padding: 20px;
+	font-size: 20px;
+	margin-right: 20px;
+}
+[type="submit"]:hover , [type="reset"]:hover{
+	cursor: pointer;
+}
+
+
+.row{
+	margin: 10px 20px;
+}
+
+
+
+#divList{
+	width: 80%;
+	border-radius: 5px;
+	border : 2px solid #DC7633  ;
+
+	margin:auto;
+	margin-top: 20px;
+}
+
+
+
+
+
+
+#divList h2{
+	margin-left: 10%;
+}
+
+#groceryList{
+	width: 80%;
+	margin: auto;
+	list-style-type: none; 
+}
+
+#groceryList li{
+	background-color: #FAD7A0;
+
+	border-radius: 10px;
+
+	position: relative;
+
+	width: 90%;
+	margin: 10px 0px;
+	padding: 10px 50px;
+
+}
+
+span[action='delete']{
+	position:absolute;
+
+	top:10px;
+	right: 20px;
+
+	height :20px;
+	width: 20px;
+
+}
+
+span[action='delete']:hover{
+	color: white;
+	cursor: pointer;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grocery Store</title>
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+	<div id="inputForm">
+		<fieldset>
+			<legend id="lgdTitle">Add Grocery</legend>
+			<form>
+				<div class="row">
+					<label for="txtGroceryName">Grocery Name</label>
+					<input type="text" name="txtGroceryname" id="txtGroceryName" required>
+				</div>
+				<div class="row">
+					<label for="txtGroceryDesc">Grocery Description</label>
+					<textarea id="txtGroceryDesc" required></textarea>
+				</div>
+				<div class="row">
+					<label for="txtGroceryPrice">Grocery Price</label>
+					<input type="number" name="txtGroceryPrice" id="txtGroceryPrice">
+				</div>
+				<div class="row">
+					<input type="submit" name="btnSubmit" id="btnSubmit" value="Add Grocery">
+					<input type="reset" name="btnReset" id="btnReset" value="Reset">
+				</div>
+			</form>
+		</fieldset>
+		
+	</div>
+
+
+	<div id="divList">
+		<h2>List Of Groceries</h2>
+		<ul id="groceryList">
+		</ul>
+	</div>
+
+	<script type="text/template" id="liTemplate">
+		<span action="delete">X</span>
+		<h3 purpose="groceryTitle" data-val="{{groceryTitle}}" >{{groceryTitle}}</h3>
+		<p purpose="groceryDesc" data-val="{{groceryDesc}}" >{{groceryDesc}}</p>
+		<p purpose="groceryPrice" data-val="{{groceryPrice}}" >{{groceryPrice}}</p>
+	</script>
+	<script type="text/javascript" src="common.js"></script>
+	<script type="text/javascript" src ="index.js"></script>
+
+</body>
+</html>
